@@ -1,7 +1,5 @@
 <?php
 
-use LDAP\Result as LDAPResult;
-
 class SimpleLog {
     /**
      * Defines the path, where the log file will be saved

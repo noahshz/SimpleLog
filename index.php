@@ -5,5 +5,7 @@
     $log->destination = "/";
     $log->filename = "LOG";
 
-    $log->write();
+    $log->write("test");
+
+    // 9h4NBNfVp#&da#T8pk&d
 ?>
