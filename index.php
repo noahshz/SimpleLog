@@ -2,10 +2,8 @@
     require_once 'SimpleLog.php';
 
     $log = new SimpleLog();
-    $log->destination = "/";
-    $log->filename = "LOG";
+    $log->destination = "C:/Users/scholzno/Documents/SimpleLog/";
+    $log->filename = "test";
 
     $log->write("test");
-
-    // 9h4NBNfVp#&da#T8pk&d
 ?>

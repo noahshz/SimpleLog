@@ -25,12 +25,37 @@ class SimpleLog {
      */
     public function write(string $message) : void
     {
-        
+        $filepath = $this->destination . $this->filename . ".log";
+
+        if(!is_dir($this->destination)) {
+            $this->createDirectory();
+        }
+        if(!file_exists($filepath)) {
+            $this->createFile();
+        }
     }
 
 
     private function createFile() : bool
     {
+        $filepath = $this->destination . $this->filename . ".log";
+        try {
+            fopen($filepath, "rw");
+            return true;
+        } catch (Exception $e) {
+            return false;
+        }
+        return false;
+    }
+    private function createDirectory() : bool
+    {
+        try {
+            mkdir($this->destination, 0777, true);
+            return true;
+        } catch (Exception $e) {
+            echo $e->getMessage();
+            return false;
+        }
         return false;
     }
 }
