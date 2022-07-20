@@ -15,7 +15,7 @@ class SimpleLog {
     public function __construct()
     {
         # initialize default parameters
-        $this->destination = "/";   
+        $this->destination = getcwd() . "/";   
         $this->filename = "simplelog";
     }
 
@@ -40,7 +40,7 @@ class SimpleLog {
     {
         $filepath = $this->destination . $this->filename . ".log";
         try {
-            fopen($filepath, "rw");
+            fopen($filepath, "w");
             return true;
         } catch (Exception $e) {
             return false;
