@@ -13,18 +13,12 @@ class SimpleLog {
      */
     public string $filename;
 
-    /**
-     * Defines the Result Object, which is returned by many functions
-     */
-    public Result $result;
-
 
     public function __construct()
     {
         # initialize default parameters
         $this->destination = "/";   
         $this->filename = "simplelog";
-        $this->result = new Result;
     }
 
     /**
@@ -40,16 +34,6 @@ class SimpleLog {
     private function createFile() : bool
     {
         return false;
-    }
-}
-
-class Result {
-    private bool $success;
-    private string $message;
-
-    public function __construct()
-    {
-        
     }
 }
 ?>
