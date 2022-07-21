@@ -54,6 +54,7 @@ $log->filename = "myfirstlog";
 $log->write("Missing Argument on Line 46", ["Error"]);
 $log->write("Failed to load ressources", ["Error"]);
 $log->write("the cpu temperature is over 70° celcius", ["Warning"]);
+$log->write("User ran out of ram", ["Important", "Userxyz"]);
 
 $logcontent = $log->getContent();
 echo $logcontent;
