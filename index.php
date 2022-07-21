@@ -7,5 +7,5 @@
 
     $log->write("Recieved an PHP error", ["scholzno"]);
     # $log->clear();
-    # echo $log->get();
+    # echo $log->getContent();
 ?>

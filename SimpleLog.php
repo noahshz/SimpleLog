@@ -111,7 +111,7 @@ class SimpleLog {
      * returns the log file
      *  @return string
      */
-    public function get() : string 
+    public function getContent() : string 
     {
         $filepath = $this->destination . $this->filename . ".log";
         if(file_exists($filepath)) {
