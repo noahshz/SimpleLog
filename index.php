@@ -5,5 +5,7 @@
     # $log->destination = "/";
     $log->filename = "test";
 
-    $log->write("test") ? "uhsd" : "isuahd";
+    $log->write("Recieved an PHP error", ["scholzno"]);
+    # $log->clear();
+    # echo $log->get();
 ?>
