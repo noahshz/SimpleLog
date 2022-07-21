@@ -25,7 +25,7 @@ class SimpleLog {
      * @param string $message Message that will be written in the log file
      * @param array $optional Default Null - Appends optional prefixes to the log message
      */
-    public function write(string $message, array $optional = null) : bool
+    public function write(string $message, array $optional_prefixes = null) : bool
     {
         $filepath = $this->destination . $this->filename . ".log";
 
@@ -38,9 +38,9 @@ class SimpleLog {
         $time = new DateTime('now');
         $time = $time->format("H:i:s d-m-Y");
 
-        if($optional != null) {
+        if($optional_prefixes != null) {
             $tmp = "";
-            foreach($optional as $item) {
+            foreach($optional_prefixes as $item) {
                 if(!empty($item)) {
                     $tmp .= "[" . $item . "]";
                 }
