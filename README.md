@@ -2,6 +2,11 @@
 
 SimpleLog is an easy and simple logger written in PHP. It can be used to log custom messages and it's possible to pass own prefixes.
 
+## ToDo`s
+
+- [ ] Search function to filter prefixes
+- [ ] Possibility to load log file in array and work with logs
+
 ### Variables:
 
 ```php
