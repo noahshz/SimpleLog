@@ -11,17 +11,17 @@ SimpleLog is an easy and simple logger written in PHP. It can be used to log cus
 
 ```php
 # defines the path, where the log file is saved
-public string $destination
+public string $destination;
 
 # defines the log file name
-public string $filename 
+public string $filename;
 ```
 
 ### Functions:
 
 ```php
 # initializes object with default parameter value
-__construct() : void
+public __construct() : void
 ```
 
 ```php
