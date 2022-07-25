@@ -1,6 +1,6 @@
 # SimpleLog
 
-[![license](https://img.shields.io/badge/License-MIT-yellow.svg)](https://github.com/noahshz/SimpleLog/blob/main/LICENSE)
+<!-- [![license](https://img.shields.io/badge/License-MIT-yellow.svg)](https://github.com/noahshz/SimpleLog/blob/main/LICENSE) -->
 
 SimpleLog is an easy and simple logger written in PHP. It can be used to log custom messages and it's possible to pass own prefixes.
 
